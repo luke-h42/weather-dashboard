@@ -1,0 +1,44 @@
+.central-area {
+    
+    width: 100vw;
+    height: 100vh;
+
+   
+}
+
+.central-div {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 40%;
+    left: 50%;
+    max-width: 80%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(128,128,128, 0.5);
+    padding: 1.5em;
+}
+
+.time {
+    
+    display: flex;
+    font-size: 6rem;
+    color: white;
+    text-shadow: 0 0 10px black;
+    
+}
+
+.greeting {
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;
+    color: white;
+    text-shadow: 0 0 10px black;
+}
+
+@media only screen and (max-width: 600px) {
+    .greeting {
+        
+        font-size: 1.5rem;}
+  }

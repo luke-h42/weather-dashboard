@@ -1,0 +1,39 @@
+.container {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    background: transparent;
+    width: 75%;
+    background-color: rgb(128,128,128, 0.5);
+    padding: 1.5em;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+    gap: 1em;
+    text-shadow: 0 0 10px black;
+    }
+
+
+.icon {
+    
+    cursor: pointer;
+    flex-shrink: 0;
+    
+}
+
+
+.quote, .author {
+    color: white; 
+    font-size: 1em;
+    text-align: center;
+    
+}
+
+
+.author {
+     font-weight: 500;
+}
+
