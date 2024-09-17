@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import { BarLoader } from "react-spinners";
 
 const App = () => {
-  const [loading, setLoading] = useState<boolean>(false);
+  const [loading, setLoading] = useState<boolean>(true);
     useEffect(() => {
       setLoading(true);
       setTimeout( () => {
