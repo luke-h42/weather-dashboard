@@ -9,6 +9,8 @@ const port = process.env.PORT || 5000;
 app.use(express.json())
 app.use(cors())
 
+app.get("/", (req,res) => res.send("Server running on Vercel"))
+
 app.get("/api/location/search", async(req, res) => {
     const searchTerm = req.query.searchTerm as string;
     const results = await locationAPI.geocodeLocation(searchTerm);
