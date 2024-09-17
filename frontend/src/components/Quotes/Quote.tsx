@@ -1,4 +1,4 @@
-import  {useState } from 'react'
+import  {useEffect, useState } from 'react'
 import './Quote.css'
 import { IoReload } from "react-icons/io5";
 import quotes from '../../assets/quotes.json'
@@ -18,7 +18,11 @@ const RandomQuote = () => {
       
     }
   
-   
+    
+    
+    useEffect(() => {
+      getRandomQuote()
+  }, []);
 
     return (
     <div className='container' id="quote-box">

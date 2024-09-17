@@ -3,8 +3,7 @@
 // backend port still allows port 5000 to be used and won't need altering
 
 export const weatherData = async(lat: number, long: number) => {
-    // const baseUrl = new URL("http://localhost:5000/api/weather/search");
-    const baseUrl = new URL("https://weather-dashboard-bmu7.onrender.com/api/weather/search");
+    const baseUrl = new URL("http://localhost:5000/api/weather/search");
     baseUrl.searchParams.append("latitude", String(lat));
     baseUrl.searchParams.append("longitude", String(long));
     try {
@@ -24,8 +23,7 @@ export const weatherData = async(lat: number, long: number) => {
 
 
 export const geocodeLocation = async(searchTerm:string) => {
-    // const baseUrl = new URL("http://localhost:5000/api/location/search");
-    const baseUrl = new URL("https://weather-dashboard-bmu7.onrender.com/api/location/search");
+    const baseUrl = new URL("http://localhost:5000/api/location/search");
     baseUrl.searchParams.append("searchTerm", searchTerm)
    
     const response = await fetch(baseUrl);

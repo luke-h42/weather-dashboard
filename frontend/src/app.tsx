@@ -12,9 +12,7 @@ const App = () => {
       setTimeout( () => {
         setLoading(false);
       }, 3000)
-      return () => {
-          // cleaning up the listeners here
-      }
+  
   }, []);
 
 
