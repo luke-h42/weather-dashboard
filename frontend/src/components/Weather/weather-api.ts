@@ -1,10 +1,10 @@
-// baseurl is changing to use with render https://weather-dashboard-bmu7.onrender.com
+// baseurl is changing to use with vercel https://weather-dashboard-two-pearl.vercel.app
 // baseurl to work on localhost will be commented out for future use if needed
 // backend port still allows port 5000 to be used and won't need altering
 
 export const weatherData = async(lat: number, long: number) => {
     // const baseUrl = new URL("http://localhost:5000/api/weather/search");
-    const baseUrl = new URL("https://weather-dashboard-1-fnyz.onrender.com/api/weather/search");
+    const baseUrl = new URL("https://weather-dashboard-two-pearl.vercel.app/api/weather/search");
     baseUrl.searchParams.append("latitude", String(lat));
     baseUrl.searchParams.append("longitude", String(long));
     try {
@@ -25,7 +25,7 @@ export const weatherData = async(lat: number, long: number) => {
 
 export const geocodeLocation = async(searchTerm:string) => {
     // const baseUrl = new URL("http://localhost:5000/api/location/search");
-    const baseUrl = new URL("https://weather-dashboard-1-fnyz.onrender.com/api/location/search");
+    const baseUrl = new URL("https://weather-dashboard-two-pearl.vercel.app/api/location/search");
     baseUrl.searchParams.append("searchTerm", searchTerm)
    
     const response = await fetch(baseUrl);
